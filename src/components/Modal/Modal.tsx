@@ -4,6 +4,9 @@ import { ThemeContext } from "styled-components";
 import { ModalWrapper } from "./Modal.element";
 import Button from "../../styles/Button";
 
+import Portal from "../Portal/Portal";
+import DemoModal from "./DemoModal";
+
 function Modal() {
   const [isOpen, setIsOpen] = useState(false);
   const { colors } = useContext(ThemeContext);
@@ -26,6 +29,11 @@ function Modal() {
       >
         Show Modal
       </Button>
+      {isOpen && (
+        <Portal>
+          <DemoModal onCloseModal={handleModalClose} />
+        </Portal>
+      )}
     </ModalWrapper>
   );
 }
