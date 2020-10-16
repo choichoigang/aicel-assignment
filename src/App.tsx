@@ -9,6 +9,7 @@ import theme from "./styles/theme";
 /* Component */
 import Header from "./components/Header/Header";
 import Modal from "./components/Modal/Modal";
+import Todo from "./components/Todo/Todo";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/modal" component={Modal} />
+        <Route path="/todo" component={Todo} />
       </Switch>
     </ThemeProvider>
   );

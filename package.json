@@ -23,6 +23,7 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.2.0",
     "styled-reset": "^4.2.3",
+    "typesafe-actions": "^5.1.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
