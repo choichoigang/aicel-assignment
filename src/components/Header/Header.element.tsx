@@ -7,7 +7,7 @@ export const HeaderSection = styled(Section)`
   font-weight: bold;
 `;
 
-export const NavListWrapper = styled.li`
+export const NavListWrapper = styled.ul`
   display: flex;
   justify-content: space-between;
 
