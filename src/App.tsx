@@ -10,6 +10,7 @@ import theme from "./styles/theme";
 import Header from "./components/Header/Header";
 import Modal from "./components/Modal/Modal";
 import Todo from "./components/Todo/Todo";
+import Counter from "./components/Counter/Counter";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path="/modal" component={Modal} />
         <Route path="/todo" component={Todo} />
+        <Route path="/counter" component={Counter} />
       </Switch>
     </ThemeProvider>
   );
