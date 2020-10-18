@@ -19,7 +19,7 @@ function NavList() {
         <Link to="/counter">Counter</Link>
       </li>
       <li>
-        <Link to="/async">Async</Link>
+        <Link to="/async?city=Seoul">Async</Link>
       </li>
     </NavListWrapper>
   );
