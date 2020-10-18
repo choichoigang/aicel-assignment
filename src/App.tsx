@@ -12,6 +12,7 @@ import Modal from "./components/Modal/Modal";
 import Todo from "./components/Todo/Todo";
 import Counter from "./components/Counter/Counter";
 import Async from "./components/Async/Async";
+import Grid from "./components/Grid/Grid";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/todo" component={Todo} />
         <Route path="/counter" component={Counter} />
         <Route path="/async" component={Async} />
+        <Route path="/grid" component={Grid} />
       </Switch>
     </ThemeProvider>
   );
