@@ -1,3 +1,4 @@
 export function changeToLowerCase(value: string | number) {
-  return value.toString().toLowerCase();
+  if (typeof value === "number") return value.toString();
+  if (typeof value === "string") return value.toLowerCase();
 }
