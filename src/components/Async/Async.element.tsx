@@ -33,7 +33,7 @@ export const AsyncContent = styled.div`
     font-weight: bold;
   }
 
-  .capital-info {
+  .city-info {
     font-weight: bold;
     display: flex;
     flex-direction: column;

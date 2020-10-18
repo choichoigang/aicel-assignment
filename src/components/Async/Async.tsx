@@ -36,7 +36,7 @@ function Async() {
       <div className="search-area">
         <input
           type="text"
-          placeholder="Please enter the capital"
+          placeholder="Please enter the City"
           onChange={handleOnChange}
           onKeyDown={handleOnKeyDown}
         />
@@ -44,11 +44,11 @@ function Async() {
       <AsyncContent>
         {isLoading && <Loading />}
         {response && (
-          <div className="capital-info">
+          <div className="city-info">
             <p>City: {response.city}</p>
             <p>Weather : {response.current.weather}</p>
             <p>Date : {response.current.date.split("T")[0]}</p>
-            <img src={response.image_url} alt="capital" />
+            <img src={response.image_url} alt="city" />
             <p></p>
           </div>
         )}
