@@ -11,6 +11,7 @@ import Header from "./components/Header/Header";
 import Modal from "./components/Modal/Modal";
 import Todo from "./components/Todo/Todo";
 import Counter from "./components/Counter/Counter";
+import Async from "./components/Async/Async";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/modal" component={Modal} />
         <Route path="/todo" component={Todo} />
         <Route path="/counter" component={Counter} />
+        <Route path="/async" component={Async} />
       </Switch>
     </ThemeProvider>
   );
