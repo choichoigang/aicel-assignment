@@ -6,6 +6,9 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import rootReducer from "./modules/index";
 
+import "react-app-polyfill/ie11";
+import "react-app-polyfill/stable";
+
 const store = createStore(rootReducer);
 
 ReactDOM.render(
