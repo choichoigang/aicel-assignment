@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../modules/index";
@@ -12,17 +12,33 @@ function Counter() {
   const dispatch = useDispatch();
   const { count } = useSelector((state: RootState) => state.counter);
 
+  const [btnAvailed, setBtnAvailed] = useState(true);
+
   const isMin = count === MIN_COUNT;
   const isMax = count === MAX_COUNT;
 
   function handleOnIncrease() {
+    if (!btnAvailed) return;
     if (count === MAX_COUNT) return;
+
+    setBtnAvailed(false);
     dispatch(onIncrease());
+
+    setTimeout(() => {
+      setBtnAvailed(true);
+    }, 1000);
   }
 
   function handleOnDecrease() {
+    if (!btnAvailed) return;
     if (count === MIN_COUNT) return;
+
+    setBtnAvailed(false);
     dispatch(onDecrease());
+
+    setTimeout(() => {
+      setBtnAvailed(true);
+    }, 1000);
   }
 
   return (
