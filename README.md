@@ -75,4 +75,11 @@
 
 - react-app-polyfill
 
-react-app-polyfill을 사용하여 ES6 문법을 호환 가능하도록 추가
+  react-app-polyfill을 사용하여 ES6 문법을 호환 가능하도록 추가
+
+## 실행
+
+- `git clone https://github.com/choichoigang/aicel-assignment.git`
+- `cd aicel-assignment`
+- `yarn install || npm install`
+- `yarn start || npm run start`
