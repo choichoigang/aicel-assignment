@@ -23,8 +23,8 @@
 
   - 배포 Branch
 
-- dev
-  - 개발 Branch (배포 전 완료된 기능은 dev로 merge 합니다.)
+- dev (배포 전 완료된 기능은 dev로 merge 합니다.)
+  - 개발 Branch
 - feature/issue-[Feature Name] (기능에 따라서 독립적인 브랜치에서 개발을 진행합니다.)
   - 기능 단위
   - 예시
