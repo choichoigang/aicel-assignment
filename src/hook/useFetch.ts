@@ -30,7 +30,7 @@ function useFetch(url: string, options: RequestInit) {
     }
 
     fetchData();
-  }, [url]);
+  }, [url, options]);
 
   return { response, error, isLoading };
 }

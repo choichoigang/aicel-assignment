@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Section from "../../styles/Section";
 
 export const LoadingWrapper = styled.div`
   width: 100%;
