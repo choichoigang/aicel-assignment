@@ -1,6 +1,6 @@
 # Aicel Project
 
-- [Demo Page Link](https://aicel-demo-deploy.s3.ap-northeast-2.amazonaws.com/index.html)
+- [Demo Page Link](http://aicel-demo-deploy.s3-website.ap-northeast-2.amazonaws.com/todo)
 
 ## 기술
 
